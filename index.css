@@ -68,6 +68,7 @@ body {
     /* top:20%;
     left: 20%; */
     top:30vh;
+    /* left: 50vw;  */
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     transform: translateY(-50%);
@@ -77,12 +78,18 @@ body {
     transform: scaleY(1.4);
     justify-content: space-between;
     align-items: center;
-    /* width: 99%; */
+    width: 100%;
     padding: 8vw;
     /* padding-bottom: 8vw; */
     text-align: center;
     border-radius: 100%;
     border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: top; 
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    transition: 200ms;
   }
 
 
@@ -135,6 +142,7 @@ a{
     text-decoration: none;
     mix-blend-mode:multiply;
     font-family: Ogg;
+    z-index: 400;
 }
 
 a:hover{
@@ -261,6 +269,7 @@ footer{
     text-transform: uppercase;
     height: 100vh;
     transition: 200ms;
+    /* pointer-events: none; */
 }
 
 header svg{
@@ -285,7 +294,7 @@ canvas{
   background-repeat: no-repeat; 
   background-size: cover; 
   filter: blur(5px);
-  pointer-events: none;
+  /* pointer-events: none; */
 } 
 
 .v1 {
@@ -510,6 +519,7 @@ background-image: linear-gradient(330deg, rgba(255, 255, 255, 0.65), rgba(255, 2
     }
     .enter{
         font-size: 3vw;
+        z-index: 4000;
     }
 
   }
@@ -524,5 +534,9 @@ background-image: linear-gradient(330deg, rgba(255, 255, 255, 0.65), rgba(255, 2
     .all{
         animation: moveup 300s infinite linear;
        
+        }
+        .enter{
+            font-size: 3vw;
+            z-index: 4000;
         }
   }
