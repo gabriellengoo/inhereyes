@@ -133,9 +133,16 @@ div {
 padding-right: 1rem;
 }
 
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    mix-blend-mode:multiply;
+    font-family: Ogg;
+}
 
-
-
+a:hover{
+    color: rgb(255, 255, 255);
+}
 
 h1 {
     position: fixed;

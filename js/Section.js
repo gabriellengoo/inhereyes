@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
 import { PMREMGenerator } from 'three/src/extras/PMREMGenerator';
 
-
+GLTFLoader.load('./component.glb');
 
 class Section {
     constructor() {
