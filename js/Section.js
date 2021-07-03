@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
 import { PMREMGenerator } from 'three/src/extras/PMREMGenerator';
 
-GLTFLoader.load('./component.glb');
+GLTFLoader.load('component.glb');
 
 class Section {
     constructor() {
@@ -101,7 +101,7 @@ class Section {
 
         let pmremGenerator = new PMREMGenerator(renderer);
 
-        rgbeLoader.load( 'clouds3.hdr', function ( texture ) {
+        rgbeLoader.load( './clouds3.hdr', function ( texture ) {
             console.log("loaded hdr");
             renderer.toneMappingExposure = 0.16;
             let envMap = pmremGenerator.fromEquirectangular( texture ).texture;

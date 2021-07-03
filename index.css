@@ -44,7 +44,7 @@ a{
 
 body {
     font: normal 20px/1.4 AkzidenzGrotesk, sans-serif;
-    color: #000;
+    /* color: #000; */
     font-size: 7vw;
     text-align: left;
     margin: 0;
@@ -238,7 +238,7 @@ animation: moveup 120s infinite linear;
 animation-iteration-count: 1;
 /* mix-blend-mode: difference; */
 font-family: steps-mono;
-color: rgb(255, 255, 255);
+/* color: rgb(255, 255, 255); */
 overflow: auto;
 }
 
